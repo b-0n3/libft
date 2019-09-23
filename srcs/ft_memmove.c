@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: b0n3 <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: aait-ham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/22 15:54:25 by b0n3              #+#    #+#             */
-/*   Updated: 2019/09/23 02:47:39 by aait-ham         ###   ########.fr       */
+/*   Created: 2019/09/23 02:32:54 by aait-ham          #+#    #+#             */
+/*   Updated: 2019/09/23 02:46:46 by aait-ham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "header.h"
 
-void ft_bzero(void *s, size_t n)
+	void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	ft_memset(s, 0, n);
+
+	return (dest);
 }
