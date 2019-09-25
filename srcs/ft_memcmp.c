@@ -6,11 +6,11 @@
 /*   By: aait-ham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 05:00:58 by aait-ham          #+#    #+#             */
-/*   Updated: 2019/09/23 05:15:28 by aait-ham         ###   ########.fr       */
+/*   Updated: 2019/09/24 17:13:46 by aait-ham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

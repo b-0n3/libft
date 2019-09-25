@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aait-ham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/22 22:32:35 by aait-ham          #+#    #+#             */
-/*   Updated: 2019/09/24 17:14:02 by aait-ham         ###   ########.fr       */
+/*   Created: 2019/09/24 02:33:54 by aait-ham          #+#    #+#             */
+/*   Updated: 2019/09/24 19:18:45 by aait-ham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	while (n--)
-		((t_byte *) dest)[n] = ((t_byte *) src)[n]; 
-	return (dest);	
+	char *ptr;
+
+	ptr = NULL;
+	ptr = ft_memchr(s, c, ft_strlen(s));
+	
+	return (ptr);
 }

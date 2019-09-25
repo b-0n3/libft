@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aait-ham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/22 22:32:35 by aait-ham          #+#    #+#             */
-/*   Updated: 2019/09/24 17:14:02 by aait-ham         ###   ########.fr       */
+/*   Created: 2019/09/24 02:24:06 by aait-ham          #+#    #+#             */
+/*   Updated: 2019/09/25 17:51:15 by aait-ham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+char	*ft_strcat(char *dest, const char *src)
 {
-	while (n--)
-		((t_byte *) dest)[n] = ((t_byte *) src)[n]; 
-	return (dest);	
+	size_t i;
+	size_t i_size;
+
+	i_size = ft_strlen(dest);
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i_size + i] = src[i];
+		i++;
+	}
+	dest[i_size + i] = '\0';
+	return (dest);
 }
